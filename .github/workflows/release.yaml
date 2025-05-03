@@ -62,4 +62,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TAG: ${{ github.ref_name }}
           REPO: ${{ github.repository }}
-        run: gh release upload -R $REPO $TAG ./Modules/WhiteLabel.zip
+        run: gh release upload -R $REPO $TAG ./Modules/WhiteLabel/build/WhiteLabel.zip
