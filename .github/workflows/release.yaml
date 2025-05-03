@@ -48,3 +48,6 @@ jobs:
 
       - name: Install and build WhiteLabel module package
         run: bash ./Modules/WhiteLabel/scripts/artifact-gen.sh
+
+      - name: Publish package
+        run: gh release upload "${{ github.ref_name }}" ./Modules/WhiteLabel.zip
