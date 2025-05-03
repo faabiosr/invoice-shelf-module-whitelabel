@@ -11,8 +11,6 @@ cd "$MODULE_ROOT" || exit
 yarn
 yarn build
 
-#zip -r "$MODULE_ROOT/../WhiteLabel.zip" . -x ".git/*" ".github/*" "build/*" ".husky/*" "node_modules/*" "scripts/*" ".commitlintrc.json" ".editorconfig" ".gitignore" ".versionrc.json" "postcss.config.js" "tailwind.config.js" "vite.config.js"
-
 mkdir -p "$MODULE_ROOT/build/WhiteLabel"
 
 # copy required files only
