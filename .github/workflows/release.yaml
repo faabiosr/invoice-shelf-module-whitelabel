@@ -16,10 +16,15 @@ jobs:
         with:
           repository: InvoiceShelf/InvoiceShelf
 
-      - name: checkout module code
-        uses: actions/checkout@v4
-        with:
-          path: Modules/WhiteLabel
+      - name: install invoice-shelf dependencies
+        run: npm install && npm run build
 
-      - name: check tree
-        run: cd Modules/WhiteLabel/ && bash ./scripts/artifact-gen.sh
+      #      - name: checkout module code
+      #        uses: actions/checkout@v4
+      #        with:
+      #          path: Modules/WhiteLabel
+      #
+      #      - name:
+      #
+      #      #      - name: check tree
+      #      #        run: cd Modules/WhiteLabel/ && bash ./scripts/artifact-gen.sh
