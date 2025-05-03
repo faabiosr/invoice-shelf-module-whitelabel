@@ -29,3 +29,9 @@ jobs:
 
       - name: check package
         run: ls -lah
+
+      - name: check package
+        run: ls -lah ./Modules/
+
+      - name: check package
+        run: ls -lah ./Modules/WhiteLabel/
