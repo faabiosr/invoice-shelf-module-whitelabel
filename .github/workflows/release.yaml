@@ -58,7 +58,7 @@ jobs:
       - name: List releases
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh release list
+        run: gh release list -R ${{ github.repository }}
 
 
       #      - name: Publish package
