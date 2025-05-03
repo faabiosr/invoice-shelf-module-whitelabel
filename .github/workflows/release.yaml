@@ -22,4 +22,4 @@ jobs:
           path: Modules/WhiteLabel
 
       - name: check tree
-        run: bash ./Modules/WhiteLabel/scripts/artifact-gen.sh
+        run: cd Modules/WhiteLabel/ && bash ./scripts/artifact-gen.sh
