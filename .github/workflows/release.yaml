@@ -1,0 +1,31 @@
+name: release
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  release:
+    name: release
+    runs-on: [ubuntu-latest]
+
+    steps:
+      - name: checkout invoice-shelf code
+        uses: actions/checkout@v4
+        with:
+          repository: InvoiceShelf/InvoiceShelf
+
+      - name: checkout module code
+        uses: actions/checkout@v4
+        with:
+          path: Modules/WhiteLabel
+
+      - name: check tree
+        run: ls -lah
+
+      - name: check tree
+        run: ls -lah Modules
+
+      - name: check tree
+        run: ls -lah Modules/WhiteLabel
