@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 
 # Get the directory of the current script
 SCRIPT_DIR="$(dirname "$(realpath "$0")")"
