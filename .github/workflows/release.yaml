@@ -1,9 +1,8 @@
 name: release
 
 on:
-  push:
-    branches:
-      - develop
+  release:
+    types: [published]
 
 jobs:
   release:
@@ -49,12 +48,3 @@ jobs:
 
       - name: Install and build WhiteLabel module package
         run: bash ./Modules/WhiteLabel/scripts/artifact-gen.sh
-
-      - name: check package
-        run: ls -lah
-
-      - name: check package
-        run: ls -lah ./Modules/
-
-      - name: check package
-        run: ls -lah ./Modules/WhiteLabel/
