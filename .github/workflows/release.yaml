@@ -53,4 +53,6 @@ jobs:
         run: bash ./Modules/WhiteLabel/scripts/artifact-gen.sh
 
       - name: Publish package
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh release upload "${{ github.ref_name }}" ./Modules/WhiteLabel.zip
