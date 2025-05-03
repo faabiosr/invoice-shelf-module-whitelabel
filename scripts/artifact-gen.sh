@@ -26,6 +26,7 @@ rsync -arh --no-links "$MODULE_ROOT/" \
   --exclude 'postcss.config.js' \
   --exclude '/scripts' \
   --exclude 'tailwind.config.js' \
+  --exclude 'vendor' \
   --exclude '.versionrc.json' \
   --exclude 'vite.config.js' \
   . "$MODULE_ROOT/build/WhiteLabel/"
